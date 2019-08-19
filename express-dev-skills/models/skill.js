@@ -18,7 +18,7 @@ const skills = [
   },
   {
     name: 'Node.js and Express',
-    description: 'Run time environment that uses modules like Express that creates a server and allows you to executing JS outside of a web browser.',
+    description: 'Run time environment that uses modules like Express to create a server and execute JS outside of a web browser.',
     experience: '1 week'
   },
   {
@@ -27,4 +27,13 @@ const skills = [
     experience: '1 week'
   }
 ];
+
+module.exports = {
+  getAll,
+}
+
+function getAll(){
+  return skills;
+}
+
 

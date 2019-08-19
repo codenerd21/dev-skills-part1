@@ -8,20 +8,16 @@
   <title>Developer Skills</title>
 </head>
 <body>
-  <h1>Skills as of <%= skill %></h1>
+  <h1>My Developer Skills</h1>
   <ul>
-    <% skills.forEach(function(t, idx) { %>
+    <% skills.forEach(function(skill, idx){ %>
       <li>
-        <form action="/skills/<%= idx %>?_method=DELETE"
-          id="delete-form" method="POST">
-          <button type="submit">X</button>
-        </form>
-        <a href="/skills/<%= idx %>"><%= t.skill %></a>
-          - 
-        <%= t.done ? 'done' : 'not done' %>
+        <a href="/skills/<%= idx + 1 %>"><%= skill.name %></a>
+        <p><%= skill.experience %></p>
+        <p><%= skill.description %></p>
       </li>
-    <% }); %>
+    <% }) %>
   </ul>
-  <a href="/skills/new">Add To-Do</a>
+  <a href="/skills/new">Add A New Skill</a>
 </body>
 </html>
