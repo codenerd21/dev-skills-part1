@@ -1,10 +1,14 @@
-const express = require('express');
-const router = express.Router();
-const skillsCtrl = require('../controllers/skills');
-
-
+var express = require('express');
+var router = express.Router();
 
 /* GET home page. */
-router.get('/', skillsCtrl.index);
+router.get('/', function(req, res) {
+  res.render('index', { title: 'My Developer Skills' });
+});
 
 module.exports = router;
+
+
+
+
+
