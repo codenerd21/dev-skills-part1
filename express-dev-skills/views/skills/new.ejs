@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title>Add New Skill</title>
+</head>
+<body class="newpage">
+  <h1>Add New Skill</h1>
+  <hr>
+  <div>
+  <form action="/skills" method="POST" autocomplete="off">
+    <input type="text" name="name" size="100" value="Enter New Skill">
+    <input type="text" name="description" size="100" value="Enter Desc. of Skill">
+    <input type="text" name="experience" size="100" value="Enter Exp. in Months">
+    <button type="submit">Submit New Skill</button>
+  </form>
+  </div>
+</body>
+</html>
