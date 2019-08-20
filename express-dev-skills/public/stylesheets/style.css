@@ -29,3 +29,21 @@ button {
   font-size: 20px;
   background-color: darksalmon;
 }
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-form button {
+  color: red;
+  height: 20px;
+  width: 20px;
+  font-size: 10px;
+  font-weight: 800;
+  background-color: yellow;
+}
+
+li {
+  list-style: none;
+}
